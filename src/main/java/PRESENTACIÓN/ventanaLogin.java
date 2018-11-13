@@ -146,7 +146,7 @@ public class ventanaLogin {
 			@SuppressWarnings("deprecation")
 			Usuario u=new Usuario(txtUsuario.getText(),txtPass.getText());
 			if(gu.comprobarUsuarioIntroducido(u)) {
-				//RESERVAS
+				IU_SALA iusala=new IU_SALA();
 				frmLogin.dispose();
 			} else {
 				lblAviso.setBackground(Color.CYAN);

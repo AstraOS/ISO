@@ -19,6 +19,7 @@ public class IU_SALA {
 	
 	public IU_SALA() {
 		initialize();
+		frmGestinDeSala.setVisible(true);
 	}
 
 	
