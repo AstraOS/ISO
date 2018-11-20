@@ -1,32 +1,29 @@
 package PRESENTACIÓN;
 
 import java.awt.EventQueue;
-import java.awt.Image;
+
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
+
 import java.awt.Color;
 
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Toolkit;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JRadioButton;
-import javax.swing.UIManager;
+
 
 import DOMINIO.GestorUsuarios;
 import DOMINIO.Usuario;
-import PERSISTENCIA.Agente;
 
-import javax.swing.ButtonGroup;
+
+
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.SQLException;
-import java.util.ArrayList;
+
 
 import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
@@ -146,6 +143,7 @@ public class ventanaLogin {
 			@SuppressWarnings("deprecation")
 			Usuario u=new Usuario(txtUsuario.getText(),txtPass.getText());
 			if(gu.comprobarUsuarioIntroducido(u)) {
+				@SuppressWarnings("unused")
 				IU_SALA iusala=new IU_SALA();
 				frmLogin.dispose();
 			} else {

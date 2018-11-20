@@ -4,10 +4,10 @@ public class Mesa {
 
 	private int Id;
 	private boolean estado;
+	String e = "";
 
 	public int getId() {
-		// TODO - implement Mesa.getId
-		throw new UnsupportedOperationException();
+		return this.Id;
 	}
 
 	/**
@@ -19,8 +19,12 @@ public class Mesa {
 		throw new UnsupportedOperationException();
 	}
 
-	public boolean getEstado() {
-		return this.estado;
+	public String getEstado() {
+		if(!this.estado)
+			e="libre";
+		else
+			e="ocupado";
+		return this.e;
 	}
 
 	/**
@@ -37,8 +41,12 @@ public class Mesa {
 	 * @param estado
 	 */
 	public Mesa(int Id, boolean estado) {
-		// TODO - implement Mesa.Mesa
-		throw new UnsupportedOperationException();
+		this.Id=Id;
+		this.estado=estado;
+	}
+	
+	public String toString() {
+		return "MESA "+this.Id;
 	}
 
 }

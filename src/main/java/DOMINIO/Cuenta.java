@@ -6,38 +6,21 @@ public class Cuenta {
 	private String Platos;
 
 	public double getPrecio() {
-		// TODO - implement Cuenta.getPrecio
-		throw new UnsupportedOperationException();
+		return Precio;
 	}
 
-	/**
-	 * 
-	 * @param Precio
-	 */
-	public void setPrecio(double Precio) {
-		// TODO - implement Cuenta.setPrecio
-		throw new UnsupportedOperationException();
+	public void setPrecio(double precio) {
+		Precio = precio;
 	}
 
 	public String getPlatos() {
-		// TODO - implement Cuenta.getPlatos
-		throw new UnsupportedOperationException();
+		return Platos;
 	}
 
-	/**
-	 * 
-	 * @param Platos
-	 */
-	public void setPlatos(String Platos) {
-		// TODO - implement Cuenta.setPlatos
-		throw new UnsupportedOperationException();
+	public void setPlatos(String platos) {
+		Platos = platos;
 	}
 
-	/**
-	 * 
-	 * @param Precio
-	 * @param Platos
-	 */
 	public Cuenta(double Precio, String Platos) {
 		// TODO - implement Cuenta.Cuenta
 		throw new UnsupportedOperationException();

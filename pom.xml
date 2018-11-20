@@ -35,5 +35,6 @@
     <module>IteracionValidarFactibleComanda</module>
     <module>IteracionCerrarMenu</module>
     <module>IteracionImprimirCuenta</module>
+    <module>xcmsdkmds</module>
   </modules>
 </project>
