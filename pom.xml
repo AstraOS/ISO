@@ -20,21 +20,15 @@
 
   </dependencies>
    <packaging>pom</packaging>
-   <artifactId>app</artifactId>
-  <modules>
-    <module>IteracionLogin</module>
-    
-    <module>IteracionAsignarCamarero</module>
-    <module>IteracionGestionarMesas</module>
-    <module>IteracionMarcarMesaComoOcupada</module>
-    <module>IteracionSeleccionarNumeroDeMesa</module>
-    <module>IteracionSecuenciarEstadosMesas</module>
-    <module>IteracionActualizarBDAlmacen</module>
-    <module>IteracionActualizarStockAlmacen</module>
-    <module>IteracionAnotarComandas</module>
-    <module>IteracionValidarFactibleComanda</module>
-    <module>IteracionCerrarMenu</module>
-    <module>IteracionImprimirCuenta</module>
-    <module>xcmsdkmds</module>
+   <artifactId>dad</artifactId>
+   <modules>
+
+   <module>Iteracion1Login</module>
+   <module>Iteracion2GestionarSala</module>
+   <module>Iteracion3GestionarMesas</module>
+   <module>Iteracion4ActualizarBDAlmacen</module>
+   
+   <module>Iteracion5ActualizarStock</module>
+    <module>Iteracion0ConectarBD</module>
   </modules>
 </project>
