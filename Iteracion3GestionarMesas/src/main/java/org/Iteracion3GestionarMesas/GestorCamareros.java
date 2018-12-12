@@ -1,15 +1,14 @@
 package org.Iteracion3GestionarMesas;
 
-
 public class GestorCamareros {
 
 	/**
 	 * 
 	 * @param Mesa
 	 */
-	public void GestionarMesas(Mesa mesa ) {
+	public void GestionarMesas(Mesa mesa) {
 		// TODO - implement GestorCamareros.GestionarMesas
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
@@ -18,7 +17,7 @@ public class GestorCamareros {
 	 */
 	public boolean SecuenciarEstados(Mesa mesa) {
 		// TODO - implement GestorCamareros.SecuenciarEstados
-		throw new UnsupportedOperationException();
+		return true;
 	}
 
 	/**
@@ -27,7 +26,7 @@ public class GestorCamareros {
 	 */
 	public void SeleccionarNumeroMesa(Mesa mesa) {
 		// TODO - implement GestorCamareros.SeleccionarNumeroMesa
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
@@ -35,9 +34,9 @@ public class GestorCamareros {
 	 * @param Platos
 	 * @param Ingredientes
 	 */
-	public void ValidarFactibilidadComida(Platos plato , Ingrediente Ingredientes) {
+	public void ValidarFactibilidadComida(Platos plato, Ingrediente Ingredientes) {
 		// TODO - implement GestorCamareros.ValidarFactibilidadComida
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
@@ -46,7 +45,7 @@ public class GestorCamareros {
 	 */
 	public boolean DarPorCerradoMenu(Comanda comanda) {
 		// TODO - implement GestorCamareros.DarPorCerradoMenu
-		throw new UnsupportedOperationException();
+		return true;
 	}
 
 	/**
@@ -55,16 +54,16 @@ public class GestorCamareros {
 	 */
 	public void ImprimirCuenta(Comanda comanda) {
 		// TODO - implement GestorCamareros.ImprimirCuenta
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
 	 * 
 	 * @param Platos
 	 */
-	public boolean DisponibilidadPlatos(Platos plato ) {
+	public boolean DisponibilidadPlatos(Platos plato) {
 		// TODO - implement GestorCamareros.DisponibilidadPlatos
-		throw new UnsupportedOperationException();
+		return true;
 	}
 
 	/**
@@ -73,7 +72,7 @@ public class GestorCamareros {
 	 */
 	public void AnotarCamanda(Comanda com) {
 		// TODO - implement GestorCamareros.AnotarCamanda
-		throw new UnsupportedOperationException();
+
 	}
 
 }

@@ -10,16 +10,16 @@ public class Agente {
 
 	private Connection conexion;
 	private Statement sentencia;
-	
+
 	public Agente() {
-		
+
 	}
 
 	public boolean conectar() throws SQLException, ClassNotFoundException {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			conexion = DriverManager.getConnection("jdbc:sqlite:src/bd.db");
-			if(conexion==null) {
+			if (conexion == null) {
 				System.out.println("Conexión nula. Algo ha fallado");
 			} else {
 				System.out.println("Conexión realizada con éxito!");

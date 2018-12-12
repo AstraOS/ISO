@@ -17,8 +17,7 @@ public class GestorAlmacen {
 	}
 
 	public void ActualizarAlmacen() {
-		// TODO - implement GestorAlmacen.ActualizarAlmacen
-		throw new UnsupportedOperationException();
+
 	}
 
 }

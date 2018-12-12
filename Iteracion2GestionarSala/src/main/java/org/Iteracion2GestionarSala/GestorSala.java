@@ -6,12 +6,11 @@ import java.util.ArrayList;
 
 import org.Iteracion0ConectarBD.Agente;
 
-
 public class GestorSala {
 
-	public ArrayList <Mesa> listaMesas=new ArrayList<Mesa>();
+	public ArrayList<Mesa> listaMesas = new ArrayList<Mesa>();
 	public Agente conexion = new Agente();
-	
+
 	public GestorSala() {
 		try {
 			leerMesas();
@@ -21,7 +20,6 @@ public class GestorSala {
 		}
 	}
 
-	
 	public ArrayList<Mesa> getListaMesas() {
 		return listaMesas;
 	}
@@ -30,8 +28,6 @@ public class GestorSala {
 		this.listaMesas = listaMesas;
 	}
 
-
-	
 	public void leerMesas() throws SQLException {
 		boolean estado = false;
 		try {
@@ -44,21 +40,21 @@ public class GestorSala {
 		ResultSet resultado = conexion.Consultar("Select * from mesas");
 
 		while (resultado.next()) {
-			if(resultado.getInt("estado")==0) {
+			if (resultado.getInt("estado") == 0) {
 				estado = false;
-			}else {
+			} else {
 				estado = true;
 			}
-			Mesa mesa=new Mesa(resultado.getInt("id"),estado);
+			Mesa mesa = new Mesa(resultado.getInt("id"), estado);
 			listaMesas.add(mesa);
 		}
-		
+
 		for (int i = 0; i < listaMesas.size(); i++) {
 			System.out.println(listaMesas.get(i).toString());
 		}
-		
+
 	}
-	
+
 	public boolean MarcaMesaOcupada(Mesa Mesa) {
 		// TODO - implement GestorSala.MarcaMesaOcupada
 		throw new UnsupportedOperationException();

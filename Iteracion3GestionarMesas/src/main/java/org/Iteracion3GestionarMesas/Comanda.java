@@ -39,7 +39,7 @@ public class Comanda {
 	 * 
 	 * @param nBedidas
 	 */
-	public void setNBedidas(int nBedidas) {
+	public void setNBebidas(int nBedidas) {
 		this.nBedidas = nBedidas;
 	}
 
@@ -64,7 +64,11 @@ public class Comanda {
 	 */
 	public Comanda(int idComanda, int nPlatos, int nBebidas, String nombreCamarero) {
 		// TODO - implement Comanda.Comanda
-		throw new UnsupportedOperationException();
+		this.idComanda = idComanda;
+		this.nPlatos = nPlatos;
+		this.nBedidas = nBebidas;
+		this.nombreCamarero = nombreCamarero;
+		
 	}
 
 }

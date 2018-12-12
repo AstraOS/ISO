@@ -1,6 +1,5 @@
 package org.Iteracion3GestionarMesas;
 
-
 public class Mesa {
 
 	private int Id;
@@ -16,15 +15,14 @@ public class Mesa {
 	 * @param Id
 	 */
 	public void setId(int Id) {
-		// TODO - implement Mesa.setId
-		throw new UnsupportedOperationException();
+		this.Id = Id;
 	}
 
 	public String getEstado() {
-		if(!this.estado)
-			e="libre";
+		if (!this.estado)
+			e = "libre";
 		else
-			e="ocupado";
+			e = "ocupado";
 		return this.e;
 	}
 
@@ -42,12 +40,12 @@ public class Mesa {
 	 * @param estado
 	 */
 	public Mesa(int Id, boolean estado) {
-		this.Id=Id;
-		this.estado=estado;
+		this.Id = Id;
+		this.estado = estado;
 	}
-	
+
 	public String toString() {
-		return "MESA "+this.Id;
+		return "MESA " + this.Id;
 	}
 
 }

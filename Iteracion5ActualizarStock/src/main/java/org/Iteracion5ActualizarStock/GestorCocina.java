@@ -22,9 +22,9 @@ public class GestorCocina {
 	 * 
 	 * @param Ingrediente
 	 */
-	public void actualizarIngredientes(Ingrediente ingrediente ) {
+	public void actualizarIngredientes(Ingrediente ingrediente) {
 		// TODO - implement GestorCocina.actualizarIngredientes
-		throw new UnsupportedOperationException();
+
 	}
 
 }
