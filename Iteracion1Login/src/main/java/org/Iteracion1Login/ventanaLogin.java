@@ -2,7 +2,6 @@ package org.Iteracion1Login;
 
 import java.awt.EventQueue;
 
-
 import javax.swing.JFrame;
 
 import java.awt.Color;
@@ -17,16 +16,13 @@ import java.awt.Toolkit;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.SQLException;
 
-
 import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
 
 public class ventanaLogin {
 
@@ -126,6 +122,9 @@ public class ventanaLogin {
 		@Override
 		public void keyReleased(KeyEvent e) {
 			btnAceptar.setEnabled(true);
+			if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+				btnAceptar.doClick();
+			}
 		}
 	}
 
@@ -138,19 +137,19 @@ public class ventanaLogin {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-			
+
 			@SuppressWarnings("deprecation")
-			Usuario u=new Usuario(txtUsuario.getText(),txtPass.getText());
-			if(gu.comprobarUsuarioIntroducido(u)) {
+			Usuario u = new Usuario(txtUsuario.getText(), txtPass.getText());
+			if (gu.comprobarUsuarioIntroducido(u)) {
 				@SuppressWarnings("unused")
-				IU_SALA iusala=new IU_SALA();
+				IU_SALA iusala = new IU_SALA();
 				frmLogin.dispose();
 			} else {
 				lblAviso.setBackground(Color.CYAN);
 				lblAviso.setText("Contraseña incorrecta");
 				btnAceptar.setEnabled(false);
 			}
-			
+
 		}
 	}
 }

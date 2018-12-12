@@ -53,9 +53,7 @@ public class GestorSala {
 			listaMesas.add(mesa);
 		}
 		
-		for (int i = 0; i < listaMesas.size(); i++) {
-			System.out.println(listaMesas.get(i).toString());
-		}
+	
 		
 	}
 	

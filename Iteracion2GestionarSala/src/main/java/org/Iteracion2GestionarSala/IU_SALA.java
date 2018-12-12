@@ -12,17 +12,20 @@ import javax.swing.JLabel;
 
 import javax.swing.JTextField;
 
-
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.event.ListDataListener;
 import javax.swing.event.ListSelectionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
+import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class IU_SALA {
 
@@ -32,26 +35,26 @@ public class IU_SALA {
 	GestorSala gs;
 	private JList<Mesa> list;
 	private JButton btnReservarMesa;
-	private JComboBox txtTurno;
+	private JList<Turno> listaTurnos;
 
 	public IU_SALA() {
-		
+
 		initialize();
 		frmGestinDeSala.setVisible(true);
 
 	}
 
 	private void initialize() {
-		gs=new GestorSala();
+		gs = new GestorSala();
 		frmGestinDeSala = new JFrame();
 		frmGestinDeSala.setTitle("Gestión de sala");
-		frmGestinDeSala.setIconImage(
-				Toolkit.getDefaultToolkit().getImage(IU_SALA.class.getResource("/iconos/baker.png")));
-		frmGestinDeSala.setBounds(100, 100, 593, 207);
+		frmGestinDeSala
+				.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_SALA.class.getResource("/iconos/baker.png")));
+		frmGestinDeSala.setBounds(100, 100, 611, 305);
 		frmGestinDeSala.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] { 25, 87, 48, 30, 129, 225, 0, 0 };
-		gridBagLayout.rowHeights = new int[] { 18, 0, 0, 0, 28, 0, 0 };
+		gridBagLayout.rowHeights = new int[] { 18, 0, 113, 33, 35, 37, 0 };
 		gridBagLayout.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, Double.MIN_VALUE };
 		gridBagLayout.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		frmGestinDeSala.getContentPane().setLayout(gridBagLayout);
@@ -77,32 +80,33 @@ public class IU_SALA {
 		gbc_label_1.gridx = 3;
 		gbc_label_1.gridy = 1;
 		frmGestinDeSala.getContentPane().add(label_1, gbc_label_1);
-		
-				JLabel lblIdMesa = new JLabel("ID MESA:");
-				GridBagConstraints gbc_lblIdMesa = new GridBagConstraints();
-				gbc_lblIdMesa.insets = new Insets(0, 0, 5, 5);
-				gbc_lblIdMesa.gridx = 4;
-				gbc_lblIdMesa.gridy = 1;
-				frmGestinDeSala.getContentPane().add(lblIdMesa, gbc_lblIdMesa);
+
+		JLabel lblIdMesa = new JLabel("ID MESA:");
+		GridBagConstraints gbc_lblIdMesa = new GridBagConstraints();
+		gbc_lblIdMesa.insets = new Insets(0, 0, 5, 5);
+		gbc_lblIdMesa.gridx = 4;
+		gbc_lblIdMesa.gridy = 1;
+		frmGestinDeSala.getContentPane().add(lblIdMesa, gbc_lblIdMesa);
 
 		list = new JList<Mesa>();
 		list.addListSelectionListener(new ListListSelectionListener());
-		DefaultListModel<Mesa> listModel=new DefaultListModel<Mesa>();
-		
+
+		DefaultListModel<Mesa> listModel = new DefaultListModel<Mesa>();
+
 		for (int i = 0; i < gs.getListaMesas().size(); i++) {
 			listModel.add(i, gs.getListaMesas().get(i));
 		}
-		
-				txtId = new JTextField();
-				txtId.setEditable(false);
-				GridBagConstraints gbc_txtId = new GridBagConstraints();
-				gbc_txtId.insets = new Insets(0, 0, 5, 5);
-				gbc_txtId.fill = GridBagConstraints.HORIZONTAL;
-				gbc_txtId.gridx = 5;
-				gbc_txtId.gridy = 1;
-				frmGestinDeSala.getContentPane().add(txtId, gbc_txtId);
-				txtId.setColumns(10);
-		
+
+		txtId = new JTextField();
+		txtId.setEditable(false);
+		GridBagConstraints gbc_txtId = new GridBagConstraints();
+		gbc_txtId.insets = new Insets(0, 0, 5, 5);
+		gbc_txtId.fill = GridBagConstraints.HORIZONTAL;
+		gbc_txtId.gridx = 5;
+		gbc_txtId.gridy = 1;
+		frmGestinDeSala.getContentPane().add(txtId, gbc_txtId);
+		txtId.setColumns(10);
+
 		list.setModel(listModel);
 		GridBagConstraints gbc_list = new GridBagConstraints();
 		gbc_list.gridwidth = 2;
@@ -112,27 +116,24 @@ public class IU_SALA {
 		gbc_list.gridx = 1;
 		gbc_list.gridy = 2;
 		frmGestinDeSala.getContentPane().add(list, gbc_list);
-		
-		JLabel lblTurno = new JLabel("TURNO:");
-		GridBagConstraints gbc_lblTurno = new GridBagConstraints();
-		gbc_lblTurno.insets = new Insets(0, 0, 5, 5);
-		gbc_lblTurno.gridx = 4;
-		gbc_lblTurno.gridy = 2;
-		frmGestinDeSala.getContentPane().add(lblTurno, gbc_lblTurno);
-		
-		txtTurno = new JComboBox();
-	
-		txtTurno.setEnabled(false);
-		txtTurno.setModel(new DefaultComboBoxModel(new String[] {"Turno 1 Comida", "Turno 2 Comida", "Turno 3 Comida", "Turno 1 Cena", "Turno 2 Cena", "Turno 3 Cena"}));
-		GridBagConstraints gbc_txtTurno = new GridBagConstraints();
-		gbc_txtTurno.insets = new Insets(0, 0, 5, 5);
-		gbc_txtTurno.fill = GridBagConstraints.HORIZONTAL;
-		gbc_txtTurno.gridx = 5;
-		gbc_txtTurno.gridy = 2;
-		frmGestinDeSala.getContentPane().add(txtTurno, gbc_txtTurno);
 
-		
-		JLabel lblEstadoActual = new JLabel("ESTADO ACTUAL:");
+		JLabel lblListaDeTurnos = new JLabel("Lista de turnos de la mesa");
+		GridBagConstraints gbc_lblListaDeTurnos = new GridBagConstraints();
+		gbc_lblListaDeTurnos.insets = new Insets(0, 0, 5, 5);
+		gbc_lblListaDeTurnos.gridx = 4;
+		gbc_lblListaDeTurnos.gridy = 2;
+		frmGestinDeSala.getContentPane().add(lblListaDeTurnos, gbc_lblListaDeTurnos);
+
+		listaTurnos = new JList<Turno>();
+		listaTurnos.addListSelectionListener(new ListaTurnosListSelectionListener());
+		GridBagConstraints gbc_listaTurnos = new GridBagConstraints();
+		gbc_listaTurnos.insets = new Insets(0, 0, 5, 5);
+		gbc_listaTurnos.fill = GridBagConstraints.BOTH;
+		gbc_listaTurnos.gridx = 5;
+		gbc_listaTurnos.gridy = 2;
+		frmGestinDeSala.getContentPane().add(listaTurnos, gbc_listaTurnos);
+
+		JLabel lblEstadoActual = new JLabel("ESTADO ACTUAL DEL TURNO:");
 		GridBagConstraints gbc_lblEstadoActual = new GridBagConstraints();
 		gbc_lblEstadoActual.insets = new Insets(0, 0, 5, 5);
 		gbc_lblEstadoActual.gridx = 4;
@@ -158,8 +159,8 @@ public class IU_SALA {
 		gbc_lblRecordatorioParaHacer.gridy = 4;
 		frmGestinDeSala.getContentPane().add(lblRecordatorioParaHacer, gbc_lblRecordatorioParaHacer);
 
-		btnReservarMesa = new JButton("Reservar mesa");
-		btnReservarMesa.addActionListener(new BtnReservarMesaActionListener());
+		btnReservarMesa = new JButton("Reservar turno");
+		btnReservarMesa.addActionListener(new BtnReservarTurnoActionListener());
 		btnReservarMesa.setEnabled(false);
 		GridBagConstraints gbc_btnReservarMesa = new GridBagConstraints();
 		gbc_btnReservarMesa.gridwidth = 2;
@@ -167,27 +168,48 @@ public class IU_SALA {
 		gbc_btnReservarMesa.gridx = 4;
 		gbc_btnReservarMesa.gridy = 5;
 		frmGestinDeSala.getContentPane().add(btnReservarMesa, gbc_btnReservarMesa);
+		list.setSelectedIndex(0);
+
+	}
+
+	private class BtnReservarTurnoActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			list.getSelectedValue().getTurnos().get((listaTurnos.getSelectedValue().getId())).setEstado("Ocupado");
+			txtEstado.setText(
+					list.getSelectedValue().getTurnos().get(listaTurnos.getSelectedValue().getId()).getEstado());
+			btnReservarMesa.setEnabled(false);
+			listaTurnos.clearSelection();
+		}
+
 	}
 
 	private class ListListSelectionListener implements ListSelectionListener {
 		public void valueChanged(ListSelectionEvent e) {
-			txtTurno.setEnabled(true);
-			txtId.setText(""+list.getSelectedValue().getId());
-			txtEstado.setText(list.getSelectedValue().getEstado());
-			if(list.getSelectedValue().getEstado()=="libre")
-				btnReservarMesa.setEnabled(true);
-			else
-				btnReservarMesa.setEnabled(false);
+
+			txtEstado.setText("");
+			txtId.setText("" + list.getSelectedValue().getId());
+
+			DefaultListModel<Turno> turnosModel = new DefaultListModel<Turno>();
+
+			for (int i = 0; i < list.getSelectedValue().getTurnos().size(); i++) {
+				turnosModel.add(i, list.getSelectedValue().getTurnos().get(i));
+			}
+
+			listaTurnos.setModel(turnosModel);
+
 		}
 	}
-	private class BtnReservarMesaActionListener implements ActionListener {
-		public void actionPerformed(ActionEvent e) {
-			list.getSelectedValue().setEstado(true);
-			txtEstado.setText(list.getSelectedValue().getEstado());
-			btnReservarMesa.setEnabled(false);
+
+	private class ListaTurnosListSelectionListener implements ListSelectionListener {
+		public void valueChanged(ListSelectionEvent e) {
+			if (e.getValueIsAdjusting()) {
+				txtEstado.setText(listaTurnos.getSelectedValue().getEstado());
+				if (listaTurnos.getSelectedValue().getEstado() == "Ocupado")
+					btnReservarMesa.setEnabled(false);
+				else
+					btnReservarMesa.setEnabled(true);
+			}
 		}
-	
 	}
-	
-	
+
 }
