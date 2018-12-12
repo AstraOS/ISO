@@ -48,11 +48,17 @@ public class GestorSala {
 			Mesa mesa = new Mesa(resultado.getInt("id"), estado);
 			listaMesas.add(mesa);
 		}
+<<<<<<< HEAD
 
 		for (int i = 0; i < listaMesas.size(); i++) {
 			System.out.println(listaMesas.get(i).toString());
 		}
 
+=======
+		
+	
+		
+>>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
 	}
 
 	public boolean MarcaMesaOcupada(Mesa Mesa) {

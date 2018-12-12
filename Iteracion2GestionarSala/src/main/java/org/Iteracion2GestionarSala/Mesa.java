@@ -5,8 +5,23 @@ import java.util.ArrayList;
 public class Mesa {
 
 	private int Id;
-	private boolean estado;
 	String e = "";
+	ArrayList <Turno> turnos;
+	
+	public Mesa(int Id, boolean estado) {
+		this.Id=Id;
+		this.turnos=new ArrayList<Turno>();
+		
+		for (int i = 0; i <3 ; i++) {
+			turnos.add(new TurnoComida(i,false));
+			
+		}
+		
+		for(int i=3;i<6;i++) {
+			turnos.add(new TurnoCena(i,false));
+		}
+	}
+	
 
 	public int getId() {
 		return this.Id;
@@ -17,6 +32,7 @@ public class Mesa {
 	 * @param Id
 	 */
 	public void setId(int Id) {
+<<<<<<< HEAD
 		// TODO - implement Mesa.setId
 		this.Id = Id;
 	}
@@ -27,16 +43,17 @@ public class Mesa {
 		else
 			e = "ocupado";
 		return this.e;
+=======
+		this.Id=Id;
 	}
 
-	/**
-	 * 
-	 * @param estado
-	 */
-	public void setEstado(boolean estado) {
-		this.estado = estado;
+	public ArrayList<Turno> getTurnos() {
+		return turnos;
+>>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
 	}
 
+
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param Id
@@ -48,6 +65,14 @@ public class Mesa {
 
 	}
 
+=======
+	public void setTurnos(ArrayList<Turno> turnos) {
+		this.turnos = turnos;
+	}
+
+
+	
+>>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
 	public String toString() {
 		return "MESA " + this.Id;
 	}
