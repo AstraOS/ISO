@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 20,
-             Errors: 748,
+      <title>File: 23,
+             Errors: 824,
              Warnings: 0,
              Infos: 0
       </title>
@@ -55,7 +55,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  28
+                  29
                 </td>
               </tr>
                           <tr>
@@ -70,6 +70,20 @@ under the License.
                 </td>
                 <td>
                   37
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.TurnoComida.java">org/Iteracion2GestionarSala/TurnoComida.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
                 </td>
               </tr>
                           <tr>
@@ -97,7 +111,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  46
+                  47
                 </td>
               </tr>
                           <tr>
@@ -167,7 +181,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  24
+                  25
                 </td>
               </tr>
                           <tr>
@@ -209,7 +223,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  130
+                  131
                 </td>
               </tr>
                           <tr>
@@ -224,6 +238,20 @@ under the License.
                 </td>
                 <td>
                   37
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.Turno.java">org/Iteracion2GestionarSala/Turno.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  42
                 </td>
               </tr>
                           <tr>
@@ -256,6 +284,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.TurnoCena.java">org/Iteracion2GestionarSala/TurnoCena.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.Mesa.java">org/Iteracion2GestionarSala/Mesa.java</a>
                 </td>
                 <td>
@@ -265,7 +307,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  49
+                  59
                 </td>
               </tr>
                           <tr>
@@ -279,7 +321,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  27
+                  30
                 </td>
               </tr>
                           <tr>
@@ -293,7 +335,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  66
+                  59
                 </td>
               </tr>
                           <tr>

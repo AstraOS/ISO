@@ -14,7 +14,7 @@ public class Agente {
 	public Agente() {
 		
 	}
-
+	
 	public boolean conectar() throws SQLException, ClassNotFoundException {
 		try {
 			Class.forName("org.sqlite.JDBC");
@@ -45,12 +45,6 @@ public class Agente {
 		return rs;
 	}
 
-	public void Modificar(String sql) throws SQLException {
-
-		this.sentencia.executeUpdate(sql);
-
-	}
-
 	public void cerrarConexion() {
 		try {
 			conexion.close();
@@ -59,4 +53,5 @@ public class Agente {
 			e.printStackTrace();
 		}
 	}
+	
 }
