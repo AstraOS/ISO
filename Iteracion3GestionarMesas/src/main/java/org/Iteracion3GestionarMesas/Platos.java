@@ -1,5 +1,6 @@
 package org.Iteracion3GestionarMesas;
 
+
 public class Platos {
 
 	private int idPlato;
@@ -50,9 +51,7 @@ public class Platos {
 	 */
 	public Platos(int idPlato, boolean disponible, String nombre) {
 		// TODO - implement Platos.Platos
-		this.idPlato = idPlato;
-		this.disponible = disponible;
-		this.nombre = nombre;
+		throw new UnsupportedOperationException();
 	}
 
 }

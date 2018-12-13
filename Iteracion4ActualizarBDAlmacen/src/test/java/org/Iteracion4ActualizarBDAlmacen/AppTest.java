@@ -7,36 +7,32 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase {
+public class AppTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public AppTest( String testName )
+    {
+        super( testName );
+    }
 
-	GestorAlmacen a = new GestorAlmacen();
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
+    }
 
-	/**
-	 * Create the test case
-	 *
-	 * @param testName
-	 *            name of the test case
-	 */
-	public AppTest(String testName) {
-		super(testName);
-	}
-
-	/**
-	 * @return the suite of tests being tested
-	 */
-	public static Test suite() {
-		return new TestSuite(AppTest.class);
-	}
-
-	/**
-	 * Rigourous Test :-)
-	 */
-	public void testApp() {
-		assertTrue(true);
-	}
-
-	public void testGestorAlmacen() {
-		a.setNStockAlmacen(2);
-		assertEquals(a.getNStockAlmacen(), 2);
-	}
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+        assertTrue( true );
+    }
 }

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
-<<<<<<< HEAD
-=======
 <file name="C:\Users\adria\eclipse-workspace\Iso-II\Iteracion0ConectarBD\src\main\java\org\Iteracion0ConectarBD\Agente.java">
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -790,5 +788,4 @@
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="3" column="14" severity="error" message="Name &apos;IU_COCINA&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
 </file>
->>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
 </checkstyle>

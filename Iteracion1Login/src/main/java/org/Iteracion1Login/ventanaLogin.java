@@ -64,7 +64,8 @@ public class ventanaLogin {
 	 */
 	private void initialize() {
 		frmLogin = new JFrame();
-		frmLogin.setIconImage(Toolkit.getDefaultToolkit().getImage(ventanaLogin.class.getResource("/iconos/baker.png")));
+		frmLogin.setIconImage(
+				Toolkit.getDefaultToolkit().getImage(ventanaLogin.class.getResource("/iconos/baker.png")));
 		frmLogin.setTitle("Restaurante Magdalena");
 		frmLogin.setBounds(100, 100, 450, 223);
 		frmLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

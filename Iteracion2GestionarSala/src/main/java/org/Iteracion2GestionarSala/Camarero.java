@@ -65,10 +65,7 @@ public class Camarero {
 	 */
 	public Camarero(String turno, long telefono, int id, String nombre) {
 		// TODO - implement Camarero.Camarero
-		this.id=id;
-		this.turno=turno;
-		this.telefono=telefono;
-		this.nombre=nombre;
+		throw new UnsupportedOperationException();
 	}
 
 }

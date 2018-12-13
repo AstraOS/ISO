@@ -25,13 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-<<<<<<< HEAD
-      <title>File: 0,
-             Errors: 0,
-=======
       <title>File: 20,
              Errors: 748,
->>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
              Warnings: 0,
              Infos: 0
       </title>
@@ -49,8 +44,6 @@ under the License.
             </tr>
           </thead>
           <tbody>
-<<<<<<< HEAD
-=======
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#org.Iteracion1Login.Usuario.java">org/Iteracion1Login/Usuario.java</a>
@@ -331,7 +324,6 @@ under the License.
                   47
                 </td>
               </tr>
->>>>>>> 717e8e7c56537ea50e05d7d333a1de385e4ac07e
                       </tbody>
         </table>
         
