@@ -22,10 +22,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>com.astraos</groupId>
-    	<artifactId>Iteracion3GestionarMesas</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+
   </dependencies>
 </project>

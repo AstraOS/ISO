@@ -7,32 +7,17 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+public class AppTest extends TestCase{
+	
+	Ingrediente ing = new Ingrediente(1, 1, "Cebolla");
+	GestorCocina gc = new GestorCocina(ing.getUnidades());
+	
+	public void testActualizarIngredientesCorrecto() {	
+		assertEquals(true, gc.actualizarIngredientes(ing));
+	}
+	
+	public void testComprobarUnidadesCorrecto() {
+		assertEquals(1, gc.getNIngredientes());
+	}
+    
 }

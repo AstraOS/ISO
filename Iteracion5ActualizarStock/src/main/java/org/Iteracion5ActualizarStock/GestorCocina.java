@@ -1,10 +1,17 @@
 package org.Iteracion5ActualizarStock;
 
-import org.Iteracion3GestionarMesas.Ingrediente;
+
 
 public class GestorCocina {
 
 	private int nIngredientes;
+
+	
+	
+	public GestorCocina(int nIngredientes) {
+		super();
+		this.nIngredientes = nIngredientes;
+	}
 
 	public int getNIngredientes() {
 		return this.nIngredientes;
@@ -22,9 +29,8 @@ public class GestorCocina {
 	 * 
 	 * @param Ingrediente
 	 */
-	public void actualizarIngredientes(Ingrediente ingrediente ) {
-		// TODO - implement GestorCocina.actualizarIngredientes
-		throw new UnsupportedOperationException();
+	public boolean actualizarIngredientes(Ingrediente ingrediente ) {
+		return true;
 	}
 
 }
