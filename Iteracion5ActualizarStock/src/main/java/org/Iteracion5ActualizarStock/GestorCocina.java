@@ -23,10 +23,7 @@ public class GestorCocina {
 	}
 
 
-	/**
-	 * 
-	 * @param Ingrediente
-	 */
+	
 	public boolean actualizarIngredientes(Ingrediente ingrediente ) {
 		return true;
 	}
