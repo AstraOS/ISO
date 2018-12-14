@@ -10,10 +10,7 @@ public class Ingrediente {
 		return this.id;
 	}
 
-	/**
-	 * 
-	 * @param id
-	 */
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -22,10 +19,7 @@ public class Ingrediente {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -34,20 +28,11 @@ public class Ingrediente {
 		return this.unidades;
 	}
 
-	/**
-	 * 
-	 * @param unidades
-	 */
+	
 	public void setUnidades(int unidades) {
 		this.unidades = unidades;
 	}
 
-	/**
-	 * 
-	 * @param unidades
-	 * @param id
-	 * @param nombre
-	 */
 	public Ingrediente(int unidades, int id, String nombre) {
 		// TODO - implement Ingrediente.Ingrediente
 		throw new UnsupportedOperationException();

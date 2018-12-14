@@ -15,12 +15,14 @@ public class TestLogin extends TestCase {
 	private Usuario u;
 	private GestorUsuarios gu;
 	private GestorUsuarios guFake;
+
 	
 	@Before
 	protected void setUp() throws Exception {
 		u=new Usuario("admin","admin");
 		gu=new GestorUsuarios();
 		guFake=new GestorUsuarios();
+		
 	}
 
 	@After
@@ -64,6 +66,7 @@ public class TestLogin extends TestCase {
 	public void testComprobarUsuarioIntroducido() {
 		gu.comprobarUsuarioIntroducido(u);
 	}
+
 	
 
 }

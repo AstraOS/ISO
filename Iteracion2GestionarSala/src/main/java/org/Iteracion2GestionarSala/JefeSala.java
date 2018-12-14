@@ -11,10 +11,7 @@ public class JefeSala {
 		return this.id;
 	}
 
-	/**
-	 * 
-	 * @param id
-	 */
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -23,10 +20,7 @@ public class JefeSala {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -35,10 +29,7 @@ public class JefeSala {
 		return this.turno;
 	}
 
-	/**
-	 * 
-	 * @param turno
-	 */
+	
 	public void setTurno(String turno) {
 		this.turno = turno;
 	}
@@ -47,21 +38,12 @@ public class JefeSala {
 		return this.telefono;
 	}
 
-	/**
-	 * 
-	 * @param telefono
-	 */
+	
 	public void setTelefono(long telefono) {
 		this.telefono = telefono;
 	}
 
-	/**
-	 * 
-	 * @param id
-	 * @param nombre
-	 * @param turno
-	 * @param unidades
-	 */
+
 	public JefeSala(int id, String nombre, String turno, int unidades) {
 		// TODO - implement JefeSala.JefeSala
 		throw new UnsupportedOperationException();

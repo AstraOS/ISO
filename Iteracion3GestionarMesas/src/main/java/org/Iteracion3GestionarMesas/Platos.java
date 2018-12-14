@@ -11,10 +11,7 @@ public class Platos {
 		return this.idPlato;
 	}
 
-	/**
-	 * 
-	 * @param idPlato
-	 */
+	
 	public void setIdPlato(int idPlato) {
 		this.idPlato = idPlato;
 	}
@@ -23,10 +20,7 @@ public class Platos {
 		return this.disponible;
 	}
 
-	/**
-	 * 
-	 * @param disponible
-	 */
+	
 	public void setDisponible(boolean disponible) {
 		this.disponible = disponible;
 	}
@@ -35,20 +29,12 @@ public class Platos {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	/**
-	 * 
-	 * @param idPlato
-	 * @param disponible
-	 * @param nombre
-	 */
+	
 	public Platos(int idPlato, boolean disponible, String nombre) {
 		// TODO - implement Platos.Platos
 		throw new UnsupportedOperationException();
