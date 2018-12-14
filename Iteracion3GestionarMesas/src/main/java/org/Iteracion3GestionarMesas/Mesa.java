@@ -11,10 +11,7 @@ public class Mesa {
 		return this.Id;
 	}
 
-	/**
-	 * 
-	 * @param Id
-	 */
+	
 	public void setId(int Id) {
 		// TODO - implement Mesa.setId
 		throw new UnsupportedOperationException();
@@ -28,19 +25,12 @@ public class Mesa {
 		return this.e;
 	}
 
-	/**
-	 * 
-	 * @param estado
-	 */
+	
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
 
-	/**
-	 * 
-	 * @param Id
-	 * @param estado
-	 */
+	
 	public Mesa(int Id, boolean estado) {
 		this.Id=Id;
 		this.estado=estado;

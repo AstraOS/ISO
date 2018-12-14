@@ -12,10 +12,7 @@ public class Camarero {
 		
 	}
 
-	/**
-	 * 
-	 * @param id
-	 */
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -24,10 +21,7 @@ public class Camarero {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -36,10 +30,7 @@ public class Camarero {
 		return this.turno;
 	}
 
-	/**
-	 * 
-	 * @param turno
-	 */
+	
 	public void setTurno(String turno) {
 		this.turno = turno;
 	}
@@ -48,21 +39,11 @@ public class Camarero {
 		return this.telefono;
 	}
 
-	/**
-	 * 
-	 * @param telefono
-	 */
 	public void setTelefono(long telefono) {
 		this.telefono = telefono;
 	}
 
-	/**
-	 * 
-	 * @param turno
-	 * @param telefono
-	 * @param id
-	 * @param nombre
-	 */
+
 	public Camarero(String turno, long telefono, int id, String nombre) {
 		// TODO - implement Camarero.Camarero
 		throw new UnsupportedOperationException();

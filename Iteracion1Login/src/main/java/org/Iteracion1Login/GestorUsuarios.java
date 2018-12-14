@@ -8,8 +8,8 @@ import org.Iteracion0ConectarBD.Agente;
 
 
 public class GestorUsuarios {
-	public static ArrayList <Usuario> listaUsuarios=new ArrayList<Usuario>();
-	public static Agente conexion = new Agente();
+	private ArrayList <Usuario> listaUsuarios=new ArrayList<Usuario>();
+	private Agente conexion = new Agente();
 
 	public GestorUsuarios() {
 		super();
@@ -28,19 +28,27 @@ public class GestorUsuarios {
 
 		while (resultado.next()) {
 			Usuario u=new Usuario(resultado.getString("nombre"),resultado.getString("password"));
-			listaUsuarios.add(u);
+			getListaUsuarios().add(u);
 		}
 	}
 
 	public boolean comprobarUsuarioIntroducido(Usuario u) {
 		
 		boolean encontrado = false;
-		for (int i = 0; i < listaUsuarios.size() && !encontrado; i++) {
-			if (listaUsuarios.get(i).getNombre().equals(u.getNombre()) && listaUsuarios.get(i).getPass().equals(u.getPass())) {
+		for (int i = 0; i < getListaUsuarios().size() && !encontrado; i++) {
+			if (getListaUsuarios().get(i).getNombre().equals(u.getNombre()) && getListaUsuarios().get(i).getPass().equals(u.getPass())) {
 				encontrado = true;
 			}
 		}
 		return encontrado;
+	}
+
+	public ArrayList <Usuario> getListaUsuarios() {
+		return listaUsuarios;
+	}
+	
+	public void setConexion(Agente conexion) {
+		this.conexion = conexion;
 	}
 
 }

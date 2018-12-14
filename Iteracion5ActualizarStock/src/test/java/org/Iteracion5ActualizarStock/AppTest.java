@@ -12,6 +12,7 @@ public class AppTest extends TestCase{
 	Ingrediente ing = new Ingrediente(1, 1, "Cebolla");
 	GestorCocina gc = new GestorCocina(ing.getUnidades());
 	
+	
 	public void testActualizarIngredientesCorrecto() {	
 		assertEquals(true, gc.actualizarIngredientes(ing));
 	}
@@ -19,5 +20,7 @@ public class AppTest extends TestCase{
 	public void testComprobarUnidadesCorrecto() {
 		assertEquals(1, gc.getNIngredientes());
 	}
+	
+	
     
 }

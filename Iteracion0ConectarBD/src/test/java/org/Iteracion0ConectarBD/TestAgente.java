@@ -1,12 +1,22 @@
 package org.Iteracion0ConectarBD;
 
-import java.sql.SQLException;
-
+import org.junit.After;
+import org.junit.Before;
 import junit.framework.TestCase;
 
 public class TestAgente extends TestCase {
 	
-	private Agente agente=new Agente();
+	private Agente agente;
+	
+	@Before
+	protected void setUp() throws Exception {
+		agente=new Agente();
+	}
+
+	@After
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
 	
 	/**
 	 * Test que devuelve verdadero si hay un error de sintaxis de sentencia SQL
@@ -14,6 +24,9 @@ public class TestAgente extends TestCase {
 	 * @throws Exception
 	 *             Control de errores
 	 */
+	
+	
+	@org.junit.Test
 	public void testSelect1() throws Exception {
 		String sql_select = "";
 		try {
@@ -30,6 +43,8 @@ public class TestAgente extends TestCase {
 	 * @throws Exception
 	 *             Control de errores
 	 */
+	
+	@org.junit.Test
 	public void testSelect2() throws Exception {
 		String sql_select = null;
 		try {
@@ -46,6 +61,7 @@ public class TestAgente extends TestCase {
 	 * @throws Exception
 	 *             Control de errores
 	 */
+	@org.junit.Test
 	public void testSelect3() throws Exception {
 		String sql_select = "Dame los datos";
 		try {
@@ -62,7 +78,7 @@ public class TestAgente extends TestCase {
 	 * @throws Exception
 	 *             Control de errores
 	 */
-	
+	@org.junit.Test
 	public void testConectarbd() throws Exception {
 		
 		try {
@@ -79,7 +95,7 @@ public class TestAgente extends TestCase {
 	 *             Control de errores
 	 */
 	
-	
+	@org.junit.Test
 	public void testDesconectarbd() throws Exception {
 		
 		try {
@@ -88,6 +104,6 @@ public class TestAgente extends TestCase {
 			
 		}
 	}
-
+	
 
 }

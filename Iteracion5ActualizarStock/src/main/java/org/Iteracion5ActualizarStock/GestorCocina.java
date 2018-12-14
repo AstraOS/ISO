@@ -17,13 +17,11 @@ public class GestorCocina {
 		return this.nIngredientes;
 	}
 
-	/**
-	 * 
-	 * @param nIngredientes
-	 */
+	
 	public void setNIngredientes(int nIngredientes) {
 		this.nIngredientes = nIngredientes;
 	}
+
 
 	/**
 	 * 
@@ -32,5 +30,7 @@ public class GestorCocina {
 	public boolean actualizarIngredientes(Ingrediente ingrediente ) {
 		return true;
 	}
+	
+	
 
 }

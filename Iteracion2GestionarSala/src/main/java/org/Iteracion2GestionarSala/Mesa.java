@@ -27,10 +27,7 @@ public class Mesa {
 		return this.Id;
 	}
 
-	/**
-	 * 
-	 * @param Id
-	 */
+	
 	public void setId(int Id) {
 		this.Id=Id;
 	}

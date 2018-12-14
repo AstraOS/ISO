@@ -8,10 +8,7 @@ public class GestorAlmacen {
 		return this.nStockAlmacen;
 	}
 
-	/**
-	 * 
-	 * @param nStockAlmacen
-	 */
+	
 	public void setNStockAlmacen(int nStockAlmacen) {
 		this.nStockAlmacen = nStockAlmacen;
 	}
