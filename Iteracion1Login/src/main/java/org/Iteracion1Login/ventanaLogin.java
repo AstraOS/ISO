@@ -49,11 +49,7 @@ public class ventanaLogin {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 * 
-	 * @throws SQLException
-	 */
+	
 	public ventanaLogin() {
 
 		initialize();
