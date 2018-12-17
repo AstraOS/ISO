@@ -44,9 +44,11 @@ public class JefeSala {
 	}
 
 
-	public JefeSala(int id, String nombre, String turno, int unidades) {
-		// TODO - implement JefeSala.JefeSala
-		throw new UnsupportedOperationException();
+	public JefeSala(int id, String nombre, String turno, long telefono) {
+		this.id=id;
+		this.nombre=nombre;
+		this.turno=turno;
+		this.telefono=telefono;
 	}
 
 }

@@ -3,6 +3,7 @@ package org.Iteracion0ConectarBD;
 import org.junit.After;
 import org.junit.Before;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 public class TestAgente extends TestCase {
 	
@@ -12,21 +13,8 @@ public class TestAgente extends TestCase {
 	protected void setUp() throws Exception {
 		agente=new Agente();
 	}
-
-	@After
-	protected void tearDown() throws Exception {
-		super.tearDown();
-	}
 	
-	/**
-	 * Test que devuelve verdadero si hay un error de sintaxis de sentencia SQL
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
-	
-	
-	@org.junit.Test
+	@Test
 	public void testSelect1() throws Exception {
 		String sql_select = "";
 		try {
@@ -37,14 +25,7 @@ public class TestAgente extends TestCase {
 		}
 	}
 	
-	/**
-	 * Test que de devuelve verdadero si hay SQLException con una sentencia SQL null
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
-	
-	@org.junit.Test
+	@Test
 	public void testSelect2() throws Exception {
 		String sql_select = null;
 		try {
@@ -55,13 +36,8 @@ public class TestAgente extends TestCase {
 		}
 	}
 	
-	/**
-	 * Test que devuelve verdadero si hay un error de sintaxis de sentencia SQL
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
-	@org.junit.Test
+
+	@Test
 	public void testSelect3() throws Exception {
 		String sql_select = "Dame los datos";
 		try {
@@ -72,13 +48,8 @@ public class TestAgente extends TestCase {
 		}
 	}
 	
-	/**
-	 * Test para comprobar la conexion con la bd
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
-	@org.junit.Test
+
+	@Test
 	public void testConectarbd() throws Exception {
 		
 		try {
@@ -88,14 +59,9 @@ public class TestAgente extends TestCase {
 		}
 	}
 	
-	/**
-	 * Test para comprobar la desconexion con la bd
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
+
 	
-	@org.junit.Test
+	@Test
 	public void testDesconectarbd() throws Exception {
 		
 		try {
@@ -106,4 +72,9 @@ public class TestAgente extends TestCase {
 	}
 	
 
+	@After
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
 }

@@ -8,7 +8,7 @@ public class Mesa {
 	String e = "";
 	ArrayList <Turno> turnos;
 	
-	public Mesa(int Id, boolean estado) {
+	public Mesa(int Id) {
 		this.Id=Id;
 		this.turnos=new ArrayList<Turno>();
 		

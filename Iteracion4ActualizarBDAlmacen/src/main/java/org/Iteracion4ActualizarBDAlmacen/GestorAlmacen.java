@@ -4,6 +4,11 @@ public class GestorAlmacen {
 
 	private int nStockAlmacen;
 
+	public GestorAlmacen(int n) {
+		this.nStockAlmacen=n;
+	}
+
+
 	public int getNStockAlmacen() {
 		return this.nStockAlmacen;
 	}
@@ -13,9 +18,9 @@ public class GestorAlmacen {
 		this.nStockAlmacen = nStockAlmacen;
 	}
 
-	public void ActualizarAlmacen() {
+	public boolean ActualizarAlmacen() {
 		// TODO - implement GestorAlmacen.ActualizarAlmacen
-		throw new UnsupportedOperationException();
+		return true;
 	}
 
 }

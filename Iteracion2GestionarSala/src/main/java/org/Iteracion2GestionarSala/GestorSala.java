@@ -13,12 +13,7 @@ public class GestorSala {
 	public Agente conexion = new Agente();
 	
 	public GestorSala() {
-		try {
-			leerMesas();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 
 	
@@ -49,23 +44,14 @@ public class GestorSala {
 			}else {
 				estado = true;
 			}
-			Mesa mesa=new Mesa(resultado.getInt("id"),estado);
+			Mesa mesa=new Mesa(resultado.getInt("id"));
 			listaMesas.add(mesa);
 		}
-		
-	
-		
-	}
-	
-	public boolean MarcaMesaOcupada(Mesa Mesa) {
-		// TODO - implement GestorSala.MarcaMesaOcupada
-		throw new UnsupportedOperationException();
 	}
 
 	
-	public void AsignarCamarero(Mesa Mesa, CamareroMesa cam) {
-		// TODO - implement GestorSala.AsignarCamarero
-		throw new UnsupportedOperationException();
+	public String AsignarCamarero(Mesa Mesa, CamareroMesa cam) {
+		return Mesa.getId() + "" + cam.getId();
 	}
 
 }

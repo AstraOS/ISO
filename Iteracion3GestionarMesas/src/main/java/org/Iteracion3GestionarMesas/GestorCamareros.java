@@ -3,52 +3,59 @@ package org.Iteracion3GestionarMesas;
 
 public class GestorCamareros {
 
-	
-	public void GestionarMesas(Mesa mesa ) {
-		// TODO - implement GestorCamareros.GestionarMesas
-		throw new UnsupportedOperationException();
-	}
+  
+  Mesa mesa = new Mesa(1, true);
+  Comanda comanda = new Comanda(1, 1, 1, "Pedro");
 
-	
-	public boolean SecuenciarEstados(Mesa mesa) {
-		// TODO - implement GestorCamareros.SecuenciarEstados
-		throw new UnsupportedOperationException();
-	}
+  
+  public int GestionarMesas(Mesa mesa ) {
+    return mesa.getId();
+  }
 
-	
-	public void SeleccionarNumeroMesa(Mesa mesa) {
-		// TODO - implement GestorCamareros.SeleccionarNumeroMesa
-		throw new UnsupportedOperationException();
-	}
+  public GestorCamareros() {
+    
+    // TODO Auto-generated constructor stub
+  }
 
-	
-	public void ValidarFactibilidadComida(Platos plato , Ingrediente Ingredientes) {
-		// TODO - implement GestorCamareros.ValidarFactibilidadComida
-		throw new UnsupportedOperationException();
-	}
+ 
+  public boolean SecuenciarEstados(Mesa mesa) {
+    // TODO - implement GestorCamareros.SecuenciarEstados
+    throw new UnsupportedOperationException();
+  }
 
-	
-	public boolean DarPorCerradoMenu(Comanda comanda) {
-		// TODO - implement GestorCamareros.DarPorCerradoMenu
-		throw new UnsupportedOperationException();
-	}
+ 
+  public int SeleccionarNumeroMesa(Mesa mesa) {
+    return mesa.getId();
+  }
 
-	
-	public void ImprimirCuenta(Comanda comanda) {
-		// TODO - implement GestorCamareros.ImprimirCuenta
-		throw new UnsupportedOperationException();
-	}
+ 
+  public boolean ValidarFactibilidadComida(Platos plato , Ingrediente Ingredientes) {
+    boolean disponible = true;
+    return disponible;
+  }
 
-	
-	public boolean DisponibilidadPlatos(Platos plato ) {
-		// TODO - implement GestorCamareros.DisponibilidadPlatos
-		throw new UnsupportedOperationException();
-	}
+  
+  public boolean DarPorCerradoMenu(Comanda comanda) {
+    boolean cerrado = true;
+    return cerrado;
+  }
 
-	
-	public void AnotarCamanda(Comanda com) {
-		// TODO - implement GestorCamareros.AnotarCamanda
-		throw new UnsupportedOperationException();
-	}
+ 
+  public boolean ImprimirCuenta(Comanda comanda) {
+    boolean cerrado = true;
+    return cerrado;
+  }
+
+ 
+  public boolean DisponibilidadPlatos(Platos plato ) {
+    boolean disponible = true;
+    return disponible;
+  }
+
+ 
+  public boolean AnotarCamanda(Comanda com) {
+    boolean cerrado = true;
+    return cerrado;
+  }
 
 }

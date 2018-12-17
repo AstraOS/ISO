@@ -35,7 +35,9 @@ public class Ingrediente {
 
 	public Ingrediente(int unidades, int id, String nombre) {
 		// TODO - implement Ingrediente.Ingrediente
-		throw new UnsupportedOperationException();
+		this.unidades=unidades;
+		this.id=id;
+		this.nombre=nombre;
 	}
 
 }

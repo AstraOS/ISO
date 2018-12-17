@@ -5,7 +5,15 @@ public class Camarero {
 	protected int id;
 	protected String nombre;
 	protected String turno;
-	protected long telefono;
+	protected String telefono;
+	
+	public Camarero(int id, String nombre, String turno, String telefono) {
+		
+		this.id=id;
+		this.nombre=nombre;
+		this.turno=turno;
+		this.telefono=telefono;
+	}
 
 	public int getId() {
 		return this.id;
@@ -35,18 +43,12 @@ public class Camarero {
 		this.turno = turno;
 	}
 
-	public long getTelefono() {
+	public String getTelefono() {
 		return this.telefono;
 	}
 
-	public void setTelefono(long telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
-	}
-
-
-	public Camarero(String turno, long telefono, int id, String nombre) {
-		// TODO - implement Camarero.Camarero
-		throw new UnsupportedOperationException();
 	}
 
 }
