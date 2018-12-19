@@ -1,15 +1,24 @@
 package org.Iteracion2GestionarSala;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class TurnoCena extends Turno {
 
-	public TurnoCena(int id, boolean ocupado) {
-		super(id, ocupado);
-		// TODO Auto-generated constructor stub
-	}
+   /**
+ * @param id
+ * @param ocupado
+ */
+public TurnoCena(final int id, final boolean ocupado) {
+        super(id, ocupado);
+    }
 
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString()+(this.id-2)+" de cena";
-	}
+    /* (non-Javadoc)
+     * @see org.Iteracion2GestionarSala.Turno#toString()
+     */
+    @Override
+    public final String toString() {
+        return super.toString() + (this.getId() - 2) + " de cena";
+    }
 }

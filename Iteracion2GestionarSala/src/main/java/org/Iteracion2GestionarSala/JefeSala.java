@@ -1,54 +1,96 @@
 package org.Iteracion2GestionarSala;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class JefeSala {
 
-	private int id;
-	private String nombre;
-	private String turno;
-	private long telefono;
+    /**
+     *
+     */
+    private int id;
+    /**
+     *
+     */
+    private String nombre;
+    /**
+     *
+     */
+    private String turno;
+    /**
+     *
+     */
+    private long telefono;
 
-	public int getId() {
-		return this.id;
-	}
+    /**
+     * @return
+     */
+    public final int getId() {
+        return this.id;
+    }
 
-	
-	public void setId(int id) {
-		this.id = id;
-	}
+    /**
+     * @param id
+     */
+    public final void setId(final int id) {
+        this.id = id;
+    }
 
-	public String getNombre() {
-		return this.nombre;
-	}
+    /**
+     * @return
+     */
+    public final String getNombre() {
+        return this.nombre;
+    }
 
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    /**
+     * @param nombre
+     */
+    public final void setNombre(final String nombre) {
+        this.nombre = nombre;
+    }
 
-	public String getTurno() {
-		return this.turno;
-	}
+    /**
+     * @return
+     */
+    public final String getTurno() {
+        return this.turno;
+    }
 
-	
-	public void setTurno(String turno) {
-		this.turno = turno;
-	}
+    /**
+     * @param turno
+     */
+    public final void setTurno(final String turno) {
+        this.turno = turno;
+    }
 
-	public long getTelefono() {
-		return this.telefono;
-	}
+    /**
+     * @return
+     */
+    public final long getTelefono() {
+        return this.telefono;
+    }
 
-	
-	public void setTelefono(long telefono) {
-		this.telefono = telefono;
-	}
+    /**
+     * @param telefono
+     */
+    public final void setTelefono(final long telefono) {
+        this.telefono = telefono;
+    }
 
-
-	public JefeSala(int id, String nombre, String turno, long telefono) {
-		this.id=id;
-		this.nombre=nombre;
-		this.turno=turno;
-		this.telefono=telefono;
-	}
+    /**
+     * @param id
+     * @param nombre
+     * @param turno
+     * @param telefono
+     */
+    public JefeSala(final int id, final String nombre,
+            final String turno, final long telefono) {
+        this.id = id;
+        this.nombre = nombre;
+        this.turno = turno;
+        this.telefono = telefono;
+    }
 
 }

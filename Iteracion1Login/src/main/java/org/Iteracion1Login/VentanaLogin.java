@@ -9,7 +9,7 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import org.Iteracion2GestionarSala.IU_SALA;
+import org.Iteracion2GestionarSala.Vsala;
 
 import java.awt.Toolkit;
 
@@ -30,11 +30,29 @@ import java.awt.event.ActionEvent;
  */
 public class VentanaLogin {
 
+    /**
+     *
+     */
     private JFrame frmLogin;
+    /**
+     *
+     */
     private JTextField txtUsuario;
+    /**
+     *
+     */
     private JLabel lblPass;
+    /**
+     *
+     */
     private JButton btnAceptar;
+    /**
+     *
+     */
     private JPasswordField txtPass;
+    /**
+     *
+     */
     private JLabel lblAviso;
 
     /**
@@ -53,6 +71,9 @@ public class VentanaLogin {
         });
     }
 
+    /**
+     *
+     */
     public VentanaLogin() {
 
         initialize();
@@ -111,6 +132,10 @@ public class VentanaLogin {
 
     }
 
+    /**
+     * @author adrii_das
+     *
+     */
     private class TxtUsuarioKeyListener extends KeyAdapter {
         @Override
         public void keyReleased(final KeyEvent e) {
@@ -119,6 +144,10 @@ public class VentanaLogin {
         }
     }
 
+    /**
+     * @author adrii_das
+     *
+     */
     private class TxtPassKeyListener extends KeyAdapter {
         @Override
         public void keyReleased(final KeyEvent e) {
@@ -129,6 +158,10 @@ public class VentanaLogin {
         }
     }
 
+    /**
+     * @author adrii_das
+     *
+     */
     private class BtnAceptarActionListener implements ActionListener {
         public void actionPerformed(final ActionEvent e) {
             GestorUsuarios gu = new GestorUsuarios();
@@ -143,7 +176,7 @@ public class VentanaLogin {
             Usuario u = new Usuario(txtUsuario.getText(), txtPass.getText());
             if (gu.comprobarUsuarioIntroducido(u)) {
                 @SuppressWarnings("unused")
-                IU_SALA iusala = new IU_SALA();
+                Vsala iusala = new Vsala();
                 frmLogin.dispose();
             } else {
                 lblAviso.setBackground(Color.CYAN);

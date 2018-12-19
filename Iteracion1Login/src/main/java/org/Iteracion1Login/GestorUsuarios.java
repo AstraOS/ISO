@@ -11,13 +11,25 @@ import org.Iteracion0ConectarBD.Agente;
  *
  */
 public class GestorUsuarios {
+    /**
+     *
+     */
     private ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
+    /**
+     *
+     */
     private Agente conexion = new Agente();
 
+    /**
+     *
+     */
     public GestorUsuarios() {
         super();
     }
 
+    /**
+     * @throws SQLException
+     */
     public final void leerUsuarios() throws SQLException {
 
         try {
@@ -36,6 +48,10 @@ public class GestorUsuarios {
         }
     }
 
+    /**
+     * @param u
+     * @return
+     */
     public final boolean comprobarUsuarioIntroducido(final Usuario u) {
 
         boolean encontrado = false;
@@ -50,10 +66,16 @@ public class GestorUsuarios {
         return encontrado;
     }
 
+    /**
+     * @return
+     */
     public final ArrayList<Usuario> getListaUsuarios() {
         return listaUsuarios;
     }
 
+    /**
+     * @param conexion
+     */
     public final void setConexion(final Agente conexion) {
         this.conexion = conexion;
     }

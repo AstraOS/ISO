@@ -1,43 +1,72 @@
 package org.Iteracion3GestionarMesas;
 
-
+/**
+ * @author adrii_das
+ *
+ */
 public class Mesa {
 
-	private int Id;
-	private boolean estado;
-	String e = "";
+    /**
+     *
+     */
+    private int id;
+    /**
+     *
+     */
+    private boolean estado;
+    /**
+     *
+     */
+    private String e = "";
 
-	public int getId() {
-		return this.Id;
-	}
+    /**
+     * @return
+     */
+    public final int getId() {
+        return this.id;
+    }
 
-	
-	public void setId(int Id) {
-		// TODO - implement Mesa.setId
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * @param id
+     */
+    public final void setId(final int id) {
+        // TODO - implement Mesa.setId
+        throw new UnsupportedOperationException();
+    }
 
-	public String getEstado() {
-		if(!this.estado)
-			e="libre";
-		else
-			e="ocupado";
-		return this.e;
-	}
+    /**
+     * @return
+     */
+    public final String getEstado() {
+        if (!this.estado) {
+            e = "libre";
+        } else {
+            e = "ocupado";
+        }
+        return this.e;
+    }
 
-	
-	public void setEstado(boolean estado) {
-		this.estado = estado;
-	}
+    /**
+     * @param estado
+     */
+    public final void setEstado(final boolean estado) {
+        this.estado = estado;
+    }
 
-	
-	public Mesa(int Id, boolean estado) {
-		this.Id=Id;
-		this.estado=estado;
-	}
-	
-	public String toString() {
-		return "MESA "+this.Id;
-	}
+    /**
+     * @param id
+     * @param estado
+     */
+    public Mesa(final int id, final boolean estado) {
+        this.id = id;
+        this.estado = estado;
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
+    public final String toString() {
+        return "MESA " + this.id;
+    }
 
 }

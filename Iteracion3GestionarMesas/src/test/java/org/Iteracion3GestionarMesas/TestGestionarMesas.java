@@ -30,36 +30,36 @@ public class TestGestionarMesas extends TestCase {
 
 	@Test
 	public void testDisponibilidadPlatoCorrecto() {
-		assertEquals(true, gc.DisponibilidadPlatos(p));
+		assertEquals(true, gc.disponibilidadPlatos(p));
 	}
 
 	@Test
 	public void testSeleccionarNumeroMesaCorrecto() {
-		assertEquals(1, gc.SeleccionarNumeroMesa(mesa));
+		assertEquals(1, gc.seleccionarNumeroMesa(mesa));
 	}
 
 	@Test
 	public void testValidarFactibilidadComidaCorrecto() {
-		assertEquals(true, gc.ValidarFactibilidadComida(p, t));
+		assertEquals(true, gc.validarFactibilidadComida(p, t));
 	}
 
 	@Test
 	public void testDarPorCerradoMenuCorrecto() {
-		assertEquals(true, gc.DarPorCerradoMenu(comanda));
+		assertEquals(true, gc.darPorCerradoMenu(comanda));
 	}
 
 	@Test
 	public void testImprimirCuentaCorrecto() {
-		assertEquals(true, gc.ImprimirCuenta(comanda));
+		assertEquals(true, gc.imprimirCuenta(comanda));
 	}
 
 	@Test
 	public void testAnotarCamandaCorrecto() {
-		assertEquals(true, gc.AnotarCamanda(comanda));
+		assertEquals(true, gc.anotarCamanda(comanda));
 	}
 
 	@Test
 	public void testGestionarMesasCorrecto() {
-		assertEquals(1, gc.GestionarMesas(mesa));
+		assertEquals(1, gc.gestionarMesas(mesa));
 	}
 }

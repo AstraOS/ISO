@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 26,
-             Errors: 832,
+      <title>File: 21,
+             Errors: 316,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,6 +46,20 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.Usuario.java">org/Iteracion1Login/Usuario.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.Platos.java">org/Iteracion3GestionarMesas/Platos.java</a>
                 </td>
                 <td>
@@ -55,7 +69,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  41
+                  15
                 </td>
               </tr>
                           <tr>
@@ -69,147 +83,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.CamareroMesa.java">org/Iteracion2GestionarSala/CamareroMesa.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion5ActualizarStock.GestorCocina.java">org/Iteracion5ActualizarStock/GestorCocina.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.Comanda.java">org/Iteracion3GestionarMesas/Comanda.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  54
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.JefeSala.java">org/Iteracion2GestionarSala/JefeSala.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  52
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.TurnoCena.java">org/Iteracion2GestionarSala/TurnoCena.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  13
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.ventanaLogin.java">org/Iteracion1Login/ventanaLogin.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  60
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.GestorCamareros.java">org/Iteracion3GestionarMesas/GestorCamareros.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  60
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.Mesa.java">org/Iteracion3GestionarMesas/Mesa.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  46
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion0ConectarBD.package-info.java">org/Iteracion0ConectarBD/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.Usuario.java">org/Iteracion1Login/Usuario.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  12
+                  2
                 </td>
               </tr>
                           <tr>
@@ -223,7 +97,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  19
+                  5
                 </td>
               </tr>
                           <tr>
@@ -237,12 +111,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  37
+                  8
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion5ActualizarStock.IU_COCINA.java">org/Iteracion5ActualizarStock/IU_COCINA.java</a>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.Vsala.java">org/Iteracion2GestionarSala/Vsala.java</a>
                 </td>
                 <td>
                   0
@@ -251,12 +125,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  69
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.package-info.java">org/Iteracion1Login/package-info.java</a>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.CamareroMesa.java">org/Iteracion2GestionarSala/CamareroMesa.java</a>
                 </td>
                 <td>
                   0
@@ -265,35 +139,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion4ActualizarBDAlmacen.IU_ALMACEN.java">org/Iteracion4ActualizarBDAlmacen/IU_ALMACEN.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.IU_CAMARERO.java">org/Iteracion3GestionarMesas/IU_CAMARERO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
+                  4
                 </td>
               </tr>
                           <tr>
@@ -307,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  9
+                  6
                 </td>
               </tr>
                           <tr>
@@ -321,7 +167,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  40
+                  15
                 </td>
               </tr>
                           <tr>
@@ -335,12 +181,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  59
+                  20
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.IU_SALA.java">org/Iteracion2GestionarSala/IU_SALA.java</a>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion5ActualizarStock.GestorCocina.java">org/Iteracion5ActualizarStock/GestorCocina.java</a>
                 </td>
                 <td>
                   0
@@ -349,7 +195,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  131
+                  7
                 </td>
               </tr>
                           <tr>
@@ -363,7 +209,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  39
+                  15
                 </td>
               </tr>
                           <tr>
@@ -377,7 +223,49 @@ under the License.
                   0
                 </td>
                 <td>
-                  42
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.Comanda.java">org/Iteracion3GestionarMesas/Comanda.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.JefeSala.java">org/Iteracion2GestionarSala/JefeSala.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion2GestionarSala.TurnoCena.java">org/Iteracion2GestionarSala/TurnoCena.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -391,7 +279,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  58
+                  12
                 </td>
               </tr>
                           <tr>
@@ -405,7 +293,49 @@ under the License.
                   0
                 </td>
                 <td>
-                  4
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.VentanaLogin.java">org/Iteracion1Login/VentanaLogin.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  35
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.GestorCamareros.java">org/Iteracion3GestionarMesas/GestorCamareros.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion3GestionarMesas.Mesa.java">org/Iteracion3GestionarMesas/Mesa.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
                 </td>
               </tr>
                       </tbody>

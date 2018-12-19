@@ -1,45 +1,77 @@
 package org.Iteracion3GestionarMesas;
 
-
+/**
+ * @author adrii_das
+ *
+ */
 public class Platos {
 
-	private int idPlato;
-	private boolean disponible;
-	private String nombre;
+    /**
+     *
+     */
+    private int idPlato;
+    /**
+     *
+     */
+    private boolean disponible;
+    /**
+     *
+     */
+    private String nombre;
 
-	public int getIdPlato() {
-		return this.idPlato;
-	}
+    /**
+     * @return
+     */
+    public final int getIdPlato() {
+        return this.idPlato;
+    }
 
-	
-	public void setIdPlato(int idPlato) {
-		this.idPlato = idPlato;
-	}
+    /**
+     * @param idPlato
+     */
+    public final void setIdPlato(final int idPlato) {
+        this.idPlato = idPlato;
+    }
 
-	public boolean getDisponible() {
-		return this.disponible;
-	}
+    /**
+     * @return
+     */
+    public final boolean getDisponible() {
+        return this.disponible;
+    }
 
-	
-	public void setDisponible(boolean disponible) {
-		this.disponible = disponible;
-	}
+    /**
+     * @param disponible
+     */
+    public final void setDisponible(final boolean disponible) {
+        this.disponible = disponible;
+    }
 
-	public String getNombre() {
-		return this.nombre;
-	}
+    /**
+     * @return
+     */
+    public final String getNombre() {
+        return this.nombre;
+    }
 
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    /**
+     * @param nombre
+     */
+    public final void setNombre(final String nombre) {
+        this.nombre = nombre;
+    }
 
-	
-	public Platos(int idPlato, boolean disponible, String nombre) {
-		// TODO - implement Platos.Platos
-		this.idPlato=idPlato;
-		this.disponible=disponible;
-		this.nombre=nombre;
-	}
+    /**
+     * @param idPlato
+     * @param disponible
+     * @param nombre
+     */
+    public Platos(final int idPlato, final boolean disponible,
+            final String nombre) {
+        // TODO - implement Platos.Platos
+        this.idPlato = idPlato;
+        this.disponible = disponible;
+        this.nombre = nombre;
+    }
 
 }

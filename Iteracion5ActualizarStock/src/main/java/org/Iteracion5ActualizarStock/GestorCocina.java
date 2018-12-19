@@ -1,33 +1,44 @@
 package org.Iteracion5ActualizarStock;
 
-
-
+/**
+ * @author adrii_das
+ *
+ */
 public class GestorCocina {
 
-	private int nIngredientes;
+    /**
+     *
+     */
+    private int nIngredientes;
 
-	
-	
-	public GestorCocina(int nIngredientes) {
-		super();
-		this.nIngredientes = nIngredientes;
-	}
+    /**
+     * @param nIngredientes
+     */
+    public GestorCocina(final int nIngredientes) {
+        super();
+        this.nIngredientes = nIngredientes;
+    }
 
-	public int getNIngredientes() {
-		return this.nIngredientes;
-	}
+    /**
+     * @return
+     */
+    public final int getNIngredientes() {
+        return this.nIngredientes;
+    }
 
-	
-	public void setNIngredientes(int nIngredientes) {
-		this.nIngredientes = nIngredientes;
-	}
+    /**
+     * @param nIngredientes
+     */
+    public final void setNIngredientes(final int nIngredientes) {
+        this.nIngredientes = nIngredientes;
+    }
 
-
-	
-	public boolean actualizarIngredientes(Ingrediente ingrediente ) {
-		return true;
-	}
-	
-	
+    /**
+     * @param ingrediente
+     * @return
+     */
+    public final boolean actualizarIngredientes(final Ingrediente ingrediente) {
+        return true;
+    }
 
 }

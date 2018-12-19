@@ -1,47 +1,85 @@
 package org.Iteracion2GestionarSala;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class Turno {
-	
-	protected int id;
-	protected boolean ocupado;
-	String estado;
-	
-	public String getEstado() {
-		return estado;
-	}
 
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+    /**
+     *
+     */
+    private int id;
+    /**
+     *
+     */
+    private boolean ocupado;
+    /**
+     *
+     */
+    private String estado;
 
-	public Turno(int id, boolean turno) {
-		this.setId(id);
-		this.setOcupado(ocupado);
-		if(this.ocupado)
-			estado="Ocupado";
-		else
-			estado="Libre";
-	}
+    /**
+     * @return
+     */
+    public final String getEstado() {
+        return estado;
+    }
 
-	public int getId() {
-		return id;
-	}
+    /**
+     * @param estado
+     */
+    public final void setEstado(final String estado) {
+        this.estado = estado;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    /**
+     * @param id
+     * @param turno
+     */
+    public Turno(final int id, final boolean turno) {
+        this.setId(id);
+        this.setOcupado(ocupado);
+        if (this.ocupado) {
+            estado = "Ocupado";
+        } else {
+            estado = "Libre";
+        }
+    }
 
-	@Override
-	public String toString() {
-	
-		return "TURNO ";
-	}
+    /**
+     * @return
+     */
+    public final int getId() {
+        return id;
+    }
 
-	public boolean isOcupado() {
-		return ocupado;
-	}
+    /**
+     * @param id
+     */
+    public final void setId(final int id) {
+        this.id = id;
+    }
 
-	public void setOcupado(boolean ocupado) {
-		this.ocupado = ocupado;
-	}
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+        return "TURNO ";
+    }
+
+    /**
+     * @return
+     */
+    public final boolean isOcupado() {
+        return ocupado;
+    }
+
+    /**
+     * @param ocupado
+     */
+    public final void setOcupado(final boolean ocupado) {
+        this.ocupado = ocupado;
+    }
 }

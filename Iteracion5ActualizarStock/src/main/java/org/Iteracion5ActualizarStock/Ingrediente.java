@@ -1,42 +1,76 @@
 package org.Iteracion5ActualizarStock;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class Ingrediente {
 
-	private int id;
-	private String nombre;
-	private int unidades;
+    /**
+     *
+     */
+    private int id;
+    /**
+     *
+     */
+    private String nombre;
+    /**
+     *
+     */
+    private int unidades;
 
-	public int getId() {
-		return this.id;
-	}
+    /**
+     * @return
+     */
+    public final int getId() {
+        return this.id;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    /**
+     * @param id
+     */
+    public final void setId(final int id) {
+        this.id = id;
+    }
 
-	public String getNombre() {
-		return this.nombre;
-	}
+    /**
+     * @return
+     */
+    public final String getNombre() {
+        return this.nombre;
+    }
 
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    /**
+     * @param nombre
+     */
+    public final void setNombre(final String nombre) {
+        this.nombre = nombre;
+    }
 
-	public int getUnidades() {
-		return this.unidades;
-	}
+    /**
+     * @return
+     */
+    public final int getUnidades() {
+        return this.unidades;
+    }
 
-	
-	public void setUnidades(int unidades) {
-		this.unidades = unidades;
-	}
+    /**
+     * @param unidades
+     */
+    public final void setUnidades(final int unidades) {
+        this.unidades = unidades;
+    }
 
-	
-	public Ingrediente(int unidades, int id, String nombre) {
-		this.unidades=unidades;
-		this.id=id;
-		this.nombre=nombre;
-	}
+    /**
+     * @param unidades
+     * @param id
+     * @param nombre
+     */
+    public Ingrediente(final int unidades, final int id, final String nombre) {
+        // TODO - implement Ingrediente.Ingrediente
+        this.unidades = unidades;
+        this.id = id;
+        this.nombre = nombre;
+    }
 
 }

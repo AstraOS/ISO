@@ -30,10 +30,11 @@ public class Agente {
 
     }
 
-    /** @return boolean
-    ** @throws SQLException
-    ** @throws ClassNotFoundException
-    **/
+    /**
+     * @return
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public final boolean conectar()
             throws SQLException, ClassNotFoundException {
         try {

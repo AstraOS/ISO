@@ -1,26 +1,43 @@
 package org.Iteracion4ActualizarBDAlmacen;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class GestorAlmacen {
 
-	private int nStockAlmacen;
+    /**
+     *
+     */
+    private int nStockAlmacen;
 
-	public GestorAlmacen(int n) {
-		this.nStockAlmacen=n;
-	}
+    /**
+     * @param n
+     */
+    public GestorAlmacen(final int n) {
+        this.nStockAlmacen = n;
+    }
 
+    /**
+     * @return
+     */
+    public final int getNStockAlmacen() {
+        return this.nStockAlmacen;
+    }
 
-	public int getNStockAlmacen() {
-		return this.nStockAlmacen;
-	}
+    /**
+     * @param nStockAlmacen
+     */
+    public final void setNStockAlmacen(final int nStockAlmacen) {
+        this.nStockAlmacen = nStockAlmacen;
+    }
 
-	
-	public void setNStockAlmacen(int nStockAlmacen) {
-		this.nStockAlmacen = nStockAlmacen;
-	}
-
-	public boolean ActualizarAlmacen() {
-		// TODO - implement GestorAlmacen.ActualizarAlmacen
-		return true;
-	}
+    /**
+     * @return
+     */
+    public final boolean actualizarAlmacen() {
+        // TODO - implement GestorAlmacen.ActualizarAlmacen
+        return true;
+    }
 
 }

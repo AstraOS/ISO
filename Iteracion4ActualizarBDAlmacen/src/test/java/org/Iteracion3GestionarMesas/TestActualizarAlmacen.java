@@ -32,7 +32,7 @@ public class TestActualizarAlmacen extends TestCase {
 
 	@Test
 	public void testActualizar() {
-		assertEquals(true, ga.ActualizarAlmacen());
+		assertEquals(true, ga.actualizarAlmacen());
 
 	}
 }

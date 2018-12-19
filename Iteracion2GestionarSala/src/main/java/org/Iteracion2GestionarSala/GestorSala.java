@@ -12,21 +12,36 @@ import org.Iteracion0ConectarBD.Agente;
  */
 public class GestorSala {
 
-    public final ArrayList<Mesa> listaMesas = new ArrayList<Mesa>();
-    public final Agente conexion = new Agente();
+    /**
+     *
+     */
+    private ArrayList<Mesa> listaMesas = new ArrayList<Mesa>();
+    /**
+     *
+     */
+    private Agente conexion = new Agente();
 
     public GestorSala() {
 
     }
 
+    /**
+     * @return
+     */
     public final ArrayList<Mesa> getListaMesas() {
         return listaMesas;
     }
 
+    /**
+     * @param listaMesas
+     */
     public final void setListaMesas(final ArrayList<Mesa> listaMesas) {
         this.listaMesas = listaMesas;
     }
 
+    /**
+     * @throws SQLException
+     */
     public final void leerMesas() throws SQLException {
         boolean estado = false;
         try {
@@ -49,7 +64,13 @@ public class GestorSala {
         }
     }
 
-    public final String asignarCamarero(final Mesa mesa, final CamareroMesa cam) {
+    /**
+     * @param mesa
+     * @param cam
+     * @return
+     */
+    public final String asignarCamarero(final
+            Mesa mesa, final CamareroMesa cam) {
         return mesa.getId() + "" + cam.getId();
     }
 
