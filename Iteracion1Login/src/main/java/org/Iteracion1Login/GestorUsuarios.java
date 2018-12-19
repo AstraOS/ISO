@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 import org.Iteracion0ConectarBD.Agente;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class GestorUsuarios {
     private ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
     private Agente conexion = new Agente();

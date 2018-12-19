@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2018</copyright>
     <item>
-      <title>File: 25,
-             Errors: 877,
+      <title>File: 26,
+             Errors: 832,
              Warnings: 0,
              Infos: 0
       </title>
@@ -195,7 +195,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  0
                 </td>
               </tr>
                           <tr>
@@ -209,7 +209,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  29
+                  12
                 </td>
               </tr>
                           <tr>
@@ -256,6 +256,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#org.Iteracion1Login.package-info.java">org/Iteracion1Login/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#org.Iteracion4ActualizarBDAlmacen.IU_ALMACEN.java">org/Iteracion4ActualizarBDAlmacen/IU_ALMACEN.java</a>
                 </td>
                 <td>
@@ -293,7 +307,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  31
+                  9
                 </td>
               </tr>
                           <tr>
@@ -391,7 +405,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  8
+                  4
                 </td>
               </tr>
                       </tbody>

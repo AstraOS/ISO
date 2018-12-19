@@ -1,5 +1,9 @@
 package org.Iteracion1Login;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class Usuario {
 
    private String nombre;

@@ -1,54 +1,56 @@
 package org.Iteracion2GestionarSala;
 
+/**
+ * @author adrii_das
+ *
+ */
 public class Camarero {
 
-	protected int id;
-	protected String nombre;
-	protected String turno;
-	protected String telefono;
-	
-	public Camarero(int id, String nombre, String turno, String telefono) {
-		
-		this.id=id;
-		this.nombre=nombre;
-		this.turno=turno;
-		this.telefono=telefono;
-	}
+    private int id;
+    private String nombre;
+    private String turno;
+    private String telefono;
 
-	public int getId() {
-		return this.id;
-		
-	}
+    public Camarero(final int id, final String nombre, 
+            final String turno, final String telefono) {
 
-	
-	public void setId(int id) {
-		this.id = id;
-	}
+        this.id = id;
+        this.nombre = nombre;
+        this.turno = turno;
+        this.telefono = telefono;
+    }
 
-	public String getNombre() {
-		return this.nombre;
-	}
+    public final int getId() {
+        return this.id;
 
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    }
 
-	public String getTurno() {
-		return this.turno;
-	}
+    public final void setId(final int id) {
+        this.id = id;
+    }
 
-	
-	public void setTurno(String turno) {
-		this.turno = turno;
-	}
+    public final String getNombre() {
+        return this.nombre;
+    }
 
-	public String getTelefono() {
-		return this.telefono;
-	}
+    public final void setNombre(final String nombre) {
+        this.nombre = nombre;
+    }
 
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
-	}
+    public final String getTurno() {
+        return this.turno;
+    }
+
+    public final void setTurno(final String turno) {
+        this.turno = turno;
+    }
+
+    public final String getTelefono() {
+        return this.telefono;
+    }
+
+    public final void setTelefono(final String telefono) {
+        this.telefono = telefono;
+    }
 
 }

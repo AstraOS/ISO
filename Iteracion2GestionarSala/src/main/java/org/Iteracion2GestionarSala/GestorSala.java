@@ -6,52 +6,51 @@ import java.util.ArrayList;
 
 import org.Iteracion0ConectarBD.Agente;
 
-
+/**
+ * @author adrii_das
+ *
+ */
 public class GestorSala {
 
-	public ArrayList <Mesa> listaMesas=new ArrayList<Mesa>();
-	public Agente conexion = new Agente();
-	
-	public GestorSala() {
-		
-	}
+    public final ArrayList<Mesa> listaMesas = new ArrayList<Mesa>();
+    public final Agente conexion = new Agente();
 
-	
-	public ArrayList<Mesa> getListaMesas() {
-		return listaMesas;
-	}
+    public GestorSala() {
 
-	public void setListaMesas(ArrayList<Mesa> listaMesas) {
-		this.listaMesas = listaMesas;
-	}
+    }
 
+    public final ArrayList<Mesa> getListaMesas() {
+        return listaMesas;
+    }
 
-	
-	public void leerMesas() throws SQLException {
-		boolean estado = false;
-		try {
-			conexion.conectar();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    public final void setListaMesas(final ArrayList<Mesa> listaMesas) {
+        this.listaMesas = listaMesas;
+    }
 
-		ResultSet resultado = conexion.consultar("Select * from mesas");
+    public final void leerMesas() throws SQLException {
+        boolean estado = false;
+        try {
+            conexion.conectar();
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
-		while (resultado.next()) {
-			if(resultado.getInt("estado")==0) {
-				estado = false;
-			}else {
-				estado = true;
-			}
-			Mesa mesa=new Mesa(resultado.getInt("id"));
-			listaMesas.add(mesa);
-		}
-	}
+        ResultSet resultado = conexion.consultar("Select * from mesas");
 
-	
-	public String AsignarCamarero(Mesa Mesa, CamareroMesa cam) {
-		return Mesa.getId() + "" + cam.getId();
-	}
+        while (resultado.next()) {
+            if (resultado.getInt("estado") == 0) {
+                estado = false;
+            } else {
+                estado = true;
+            }
+            Mesa mesa = new Mesa(resultado.getInt("id"));
+            listaMesas.add(mesa);
+        }
+    }
+
+    public final String asignarCamarero(final Mesa mesa, final CamareroMesa cam) {
+        return mesa.getId() + "" + cam.getId();
+    }
 
 }
