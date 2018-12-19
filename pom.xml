@@ -167,6 +167,7 @@
 				<configuration>
 					<skipEmptyReport>false</skipEmptyReport>
 				</configuration>
+				 <property name="severity" value="ignore"/>
 			</plugin>
 
 			<plugin>

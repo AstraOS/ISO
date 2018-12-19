@@ -18,7 +18,7 @@ public class TestAgente extends TestCase {
 	public void testSelect1() throws Exception {
 		String sql_select = "";
 		try {
-			agente.Consultar(sql_select);
+			agente.consultar(sql_select);
 			fail();
 		}catch(Exception e) {
 			
@@ -29,7 +29,7 @@ public class TestAgente extends TestCase {
 	public void testSelect2() throws Exception {
 		String sql_select = null;
 		try {
-			agente.Consultar(sql_select);
+			agente.consultar(sql_select);
 			fail();
 		} catch(Exception e) {
 			
@@ -41,7 +41,7 @@ public class TestAgente extends TestCase {
 	public void testSelect3() throws Exception {
 		String sql_select = "Dame los datos";
 		try {
-			agente.Consultar(sql_select);
+			agente.consultar(sql_select);
 			fail();
 		} catch(Exception e) {
 			

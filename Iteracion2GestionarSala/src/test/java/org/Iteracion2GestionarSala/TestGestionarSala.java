@@ -52,6 +52,7 @@ public class TestGestionarSala extends TestCase {
 		super.tearDown();
 	}
 
+	@Test
 	public void testAsignarCamareroCorrecto() {
 		assertEquals("11", gs.AsignarCamarero(mesa, cam));
 	}

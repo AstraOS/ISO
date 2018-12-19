@@ -36,7 +36,7 @@ public class GestorSala {
 			e.printStackTrace();
 		}
 
-		ResultSet resultado = conexion.Consultar("Select * from mesas");
+		ResultSet resultado = conexion.consultar("Select * from mesas");
 
 		while (resultado.next()) {
 			if(resultado.getInt("estado")==0) {

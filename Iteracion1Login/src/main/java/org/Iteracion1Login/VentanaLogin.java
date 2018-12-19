@@ -24,11 +24,11 @@ import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class ventanaLogin {
+public class VentanaLogin {
 
 	private JFrame frmLogin;
 	private JTextField txtUsuario;
-	private JLabel lblContraseña;
+	private JLabel lblPass;
 	private JButton btnAceptar;
 	private JPasswordField txtPass;
 	private JLabel lblAviso;
@@ -40,7 +40,7 @@ public class ventanaLogin {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventanaLogin window = new ventanaLogin();
+					VentanaLogin window = new VentanaLogin();
 					window.frmLogin.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -50,7 +50,7 @@ public class ventanaLogin {
 	}
 
 	
-	public ventanaLogin() {
+	public VentanaLogin() {
 
 		initialize();
 	}
@@ -61,7 +61,7 @@ public class ventanaLogin {
 	private void initialize() {
 		frmLogin = new JFrame();
 		frmLogin.setIconImage(
-				Toolkit.getDefaultToolkit().getImage(ventanaLogin.class.getResource("/iconos/baker.png")));
+				Toolkit.getDefaultToolkit().getImage(VentanaLogin.class.getResource("/iconos/baker.png")));
 		frmLogin.setTitle("Restaurante Magdalena");
 		frmLogin.setBounds(100, 100, 450, 223);
 		frmLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -71,10 +71,10 @@ public class ventanaLogin {
 		lblUsuario.setBounds(177, 54, 46, 14);
 		frmLogin.getContentPane().add(lblUsuario);
 
-		lblContraseña = new JLabel("Contraseña");
-		lblContraseña.setEnabled(false);
-		lblContraseña.setBounds(177, 95, 68, 14);
-		frmLogin.getContentPane().add(lblContraseña);
+		lblPass = new JLabel("Contraseña");
+		lblPass.setEnabled(false);
+		lblPass.setBounds(177, 95, 68, 14);
+		frmLogin.getContentPane().add(lblPass);
 
 		txtUsuario = new JTextField();
 		txtUsuario.addKeyListener(new TxtUsuarioKeyListener());
@@ -89,7 +89,7 @@ public class ventanaLogin {
 		frmLogin.getContentPane().add(btnAceptar);
 
 		JLabel lblLblicono = new JLabel("lblIcono");
-		lblLblicono.setIcon(new ImageIcon(ventanaLogin.class.getResource("/iconos/Cocinero.png")));
+		lblLblicono.setIcon(new ImageIcon(VentanaLogin.class.getResource("/iconos/Cocinero.png")));
 		lblLblicono.setBounds(21, 26, 113, 102);
 		frmLogin.getContentPane().add(lblLblicono);
 
@@ -109,7 +109,7 @@ public class ventanaLogin {
 	private class TxtUsuarioKeyListener extends KeyAdapter {
 		@Override
 		public void keyReleased(KeyEvent e) {
-			lblContraseña.setEnabled(true);
+			lblPass.setEnabled(true);
 			txtPass.setEnabled(true);
 		}
 	}
